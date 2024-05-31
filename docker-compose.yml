@@ -1,0 +1,9 @@
+version: "2.27.0"  
+
+services:
+  my-web-app:
+    build: .  
+    ports:
+      - "8080:8080"  
+    volumes:
+      - ./data:/usr/local/tomcat/webapps  
